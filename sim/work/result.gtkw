@@ -1,17 +1,19 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Mon Jan 20 09:41:52 2025
+[*] Tue Jan 21 09:46:48 2025
 [*]
 [dumpfile] "C:\Users\Posimsetty\Desktop\RISC-V\sim\work\result.ghw"
-[dumpfile_mtime] "Mon Jan 20 09:38:24 2025"
-[dumpfile_size] 35002494
+[dumpfile_mtime] "Tue Jan 21 09:45:04 2025"
+[dumpfile_size] 2417
 [savefile] "C:\Users\Posimsetty\Desktop\RISC-V\sim\work\result.gtkw"
 [timestart] 0
 [size] 2560 1369
-[pos] -9 -9
-*-41.226780 1945000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -1 -1
+*-25.673723 135400000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.tb.
+[treeopen] top.tb.dut_im.
+[treeopen] top.tb.dut_pc.
 [sst_width] 278
 [signals_width] 286
 [sst_expanded] 1
@@ -25,5 +27,10 @@ top.tb.dut_pc.i_pc_sel
 @22
 #{top.tb.pc_in[31:0]} top.tb.pc_in[31] top.tb.pc_in[30] top.tb.pc_in[29] top.tb.pc_in[28] top.tb.pc_in[27] top.tb.pc_in[26] top.tb.pc_in[25] top.tb.pc_in[24] top.tb.pc_in[23] top.tb.pc_in[22] top.tb.pc_in[21] top.tb.pc_in[20] top.tb.pc_in[19] top.tb.pc_in[18] top.tb.pc_in[17] top.tb.pc_in[16] top.tb.pc_in[15] top.tb.pc_in[14] top.tb.pc_in[13] top.tb.pc_in[12] top.tb.pc_in[11] top.tb.pc_in[10] top.tb.pc_in[9] top.tb.pc_in[8] top.tb.pc_in[7] top.tb.pc_in[6] top.tb.pc_in[5] top.tb.pc_in[4] top.tb.pc_in[3] top.tb.pc_in[2] top.tb.pc_in[1] top.tb.pc_in[0]
 #{top.tb.pc_out[31:0]} top.tb.pc_out[31] top.tb.pc_out[30] top.tb.pc_out[29] top.tb.pc_out[28] top.tb.pc_out[27] top.tb.pc_out[26] top.tb.pc_out[25] top.tb.pc_out[24] top.tb.pc_out[23] top.tb.pc_out[22] top.tb.pc_out[21] top.tb.pc_out[20] top.tb.pc_out[19] top.tb.pc_out[18] top.tb.pc_out[17] top.tb.pc_out[16] top.tb.pc_out[15] top.tb.pc_out[14] top.tb.pc_out[13] top.tb.pc_out[12] top.tb.pc_out[11] top.tb.pc_out[10] top.tb.pc_out[9] top.tb.pc_out[8] top.tb.pc_out[7] top.tb.pc_out[6] top.tb.pc_out[5] top.tb.pc_out[4] top.tb.pc_out[3] top.tb.pc_out[2] top.tb.pc_out[1] top.tb.pc_out[0]
+@200
+-Instruction Memory
+@22
+#{top.tb.dut_im.i_address[31:0]} top.tb.dut_im.i_address[31] top.tb.dut_im.i_address[30] top.tb.dut_im.i_address[29] top.tb.dut_im.i_address[28] top.tb.dut_im.i_address[27] top.tb.dut_im.i_address[26] top.tb.dut_im.i_address[25] top.tb.dut_im.i_address[24] top.tb.dut_im.i_address[23] top.tb.dut_im.i_address[22] top.tb.dut_im.i_address[21] top.tb.dut_im.i_address[20] top.tb.dut_im.i_address[19] top.tb.dut_im.i_address[18] top.tb.dut_im.i_address[17] top.tb.dut_im.i_address[16] top.tb.dut_im.i_address[15] top.tb.dut_im.i_address[14] top.tb.dut_im.i_address[13] top.tb.dut_im.i_address[12] top.tb.dut_im.i_address[11] top.tb.dut_im.i_address[10] top.tb.dut_im.i_address[9] top.tb.dut_im.i_address[8] top.tb.dut_im.i_address[7] top.tb.dut_im.i_address[6] top.tb.dut_im.i_address[5] top.tb.dut_im.i_address[4] top.tb.dut_im.i_address[3] top.tb.dut_im.i_address[2] top.tb.dut_im.i_address[1] top.tb.dut_im.i_address[0]
+#{top.tb.dut_im.o_instruction[31:0]} top.tb.dut_im.o_instruction[31] top.tb.dut_im.o_instruction[30] top.tb.dut_im.o_instruction[29] top.tb.dut_im.o_instruction[28] top.tb.dut_im.o_instruction[27] top.tb.dut_im.o_instruction[26] top.tb.dut_im.o_instruction[25] top.tb.dut_im.o_instruction[24] top.tb.dut_im.o_instruction[23] top.tb.dut_im.o_instruction[22] top.tb.dut_im.o_instruction[21] top.tb.dut_im.o_instruction[20] top.tb.dut_im.o_instruction[19] top.tb.dut_im.o_instruction[18] top.tb.dut_im.o_instruction[17] top.tb.dut_im.o_instruction[16] top.tb.dut_im.o_instruction[15] top.tb.dut_im.o_instruction[14] top.tb.dut_im.o_instruction[13] top.tb.dut_im.o_instruction[12] top.tb.dut_im.o_instruction[11] top.tb.dut_im.o_instruction[10] top.tb.dut_im.o_instruction[9] top.tb.dut_im.o_instruction[8] top.tb.dut_im.o_instruction[7] top.tb.dut_im.o_instruction[6] top.tb.dut_im.o_instruction[5] top.tb.dut_im.o_instruction[4] top.tb.dut_im.o_instruction[3] top.tb.dut_im.o_instruction[2] top.tb.dut_im.o_instruction[1] top.tb.dut_im.o_instruction[0]
 [pattern_trace] 1
 [pattern_trace] 0
