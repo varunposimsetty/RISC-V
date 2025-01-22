@@ -51,7 +51,7 @@ architecture RTL of ControlUnit is
                 rs2 <= i_instruction(24 downto 20);
                 rs1 <= i_instruction(19 downto 15);
                 rd <= i_instruction(11 downto 7);
-                imm <= (others => '0');
+                o_imm <= (others => '0');
                 -- general control signals 
                 reg_write <= '1'; -- register enbaled to write in the desination address
                 mem_read <= '0';
@@ -86,7 +86,8 @@ architecture RTL of ControlUnit is
             when "0010011" =>
                 funct7 <= (others => '0');
                 funct3 <= i_instruction(14 downto 12);
-                imm <= std_ulogic_vector(signed(i_instruction(31 downto 20)));
+                imm(11 downto 0) <= i_instruction(31 downto 20);
+                o_imm <= std_ulogic_vector(signed(imm));
                 rs1 <= i_instruction(19 downto 15);
                 rs2 <= (others => '0');
                 rd <= i_instruction(11 downto 7);
@@ -111,7 +112,8 @@ architecture RTL of ControlUnit is
             when "0000011" =>
                 funct7 <= (others => '0');
                 funct3 <= i_instruction(14 downto 12);
-                imm <= std_ulogic_vector(resize(signed(i_instruction(31 downto 20)),32));
+                imm(11 downto 0) <= i_instruction(31 downto 20);
+                o_imm <= std_ulogic_vector(signed(imm));
                 rs1 <= i_instruction(19 downto 15);
                 rs2 <= (others => '0');
                 rd <= i_instruction(11 downto 7);
@@ -129,7 +131,8 @@ architecture RTL of ControlUnit is
             when "1100111" =>
                 funct7 <= (others => '0'); 
                 funct3 <= i_instruction(14 downto 12);
-                imm <= std_ulogic_vector(signed(i_instruction(31 downto 20)));
+                imm(11 downto 0) <= i_instruction(31 downto 20);
+                o_imm <= std_ulogic_vector(signed(imm));
                 rs1 <= i_instruction(19 downto 15);
                 rs2 <= (others => '0');
                 rd <= i_instruction(11 downto 7);
@@ -147,7 +150,9 @@ architecture RTL of ControlUnit is
             when "0100011" => 
                 funct7 <= (others => '0'); 
                 funct3 <= i_instruction(14 downto 12);
-                imm <= std_ulogic_vector(signed(i_instruction(31 downto 20) & i_instruction(4 downto 0)));
+                imm(11 downto 5) <= i_instruction(31 downto 25);
+                imm(4 downto 0) <= i_instruction(11 downto 7);
+                o_imm <= std_ulogic_vector(signed(imm));
                 rs1 <= i_instruction(19 downto 15);
                 rd <= (others => '0');
                 rs2 <= i_instruction(24 downto 20);
@@ -165,7 +170,11 @@ architecture RTL of ControlUnit is
             when "1100011" => 
                 funct7 <= (others => '0'); 
                 funct3 <= i_instruction(14 downto 12);
-                imm <= std_ulogic_vector(signed(i_instruction(31) & i_instruction(7) & i_instruction(30 downto 25) & i_instruction(11 downto 8) & '0'));
+                imm(12) <= i_instruction(31);
+                imm(11) <= i_instruction(7);
+                imm(10 downto 5) <= i_instruction(30 downto 25);
+                imm(4 downto 0) <= i_instruction(11 downto 8) & '0';
+                o_imm <= std_ulogic_vector(signed(imm));
                 rs1 <= i_instruction(19 downto 15);
                 rs2 <= i_instruction(24 downto 20);
                 rd <= (others => '0');
@@ -187,7 +196,11 @@ architecture RTL of ControlUnit is
                 funct3 <= (others => '0');
                 rs1 <= (others => '0');
                 rs2 <= (others => '0');
-                imm <= std_ulogic_vector(signed(i_instruction(31) & i_instruction(19 downto 12) & i_instruction(20 )& i_instruction(30 downto 21) & '0'));
+                imm(20) <= i_instruction(31);
+                imm(19 downto 12) <= i_instruction(19 downto 12);
+                imm(11) <= i_instruction(20);
+                imm(10 downto 0) <= i_instruction(30 downto 21) & '0';
+                o_imm <= std_ulogic_vector(signed(imm));
                 rd <= (i_instruction(11 downto 7));
                 alu_op <= "0000";
                 -- general control signals 
@@ -197,7 +210,18 @@ architecture RTL of ControlUnit is
                 branch <= '0';
                 jump <= '0';
             when others => 
-                null;
+                funct7 <= (others => '0');
+                funct3 <=(others => '0');
+                rs2 <= (others => '0');
+                rs1 <= (others => '0');
+                rd <= (others => '0');
+                o_imm <= (others => '0');
+                -- general control signals 
+                reg_write <= '0'; -- register enbaled to write in the desination address
+                mem_read <= '0';
+                mem_write <= '0';
+                branch <= '0';
+                jump <= '0';  
         end case;    
 
     end process;
@@ -207,7 +231,6 @@ architecture RTL of ControlUnit is
     o_mem_write <= mem_write;
     o_branch <= branch;
     o_jump <= jump;
-    o_imm <= imm;
     o_rs1 <= rs1;
     o_rs2 <= rs2;
     o_rd <= rd;
