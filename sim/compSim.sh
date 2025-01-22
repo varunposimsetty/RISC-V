@@ -10,8 +10,9 @@ mkdir -p $WORK_DIR
 # importing source files
 ghdl -i --workdir=$WORK_DIR ../src/ProgramCounter.vhd
 ghdl -i --workdir=$WORK_DIR ../src/InstructionMemory.vhd
+ghdl -i --workdir=$WORK_DIR ../src/ControlUnit.vhd
 
-ghdl -i --workdir=$WORK_DIR ./tb_IM.vhd
+ghdl -i --workdir=$WORK_DIR ./tb_CU.vhd
 
 # building simulation files
 ghdl -m --workdir=$WORK_DIR tb
