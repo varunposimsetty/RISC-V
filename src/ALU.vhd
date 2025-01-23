@@ -57,19 +57,24 @@ begin
                     end if;
                 when "1010" => 
                     if (i_a = i_b) then 
-                    result <= x"00000001";
+                        result <= x"00000001";
                     else
                         result <= (others => '0');
                     end if;
                 when others => 
                     null;
             end case;
+        end process proc_alu;
+
+        proc_zero_flag : process(result) is 
+        begin 
             if (result = x"00000000") then 
                 zero <= '1';
             else 
                 zero <= '0';
             end if;
-        end process proc_alu;
+        end process proc_zero_flag;
+
 o_result <= result;
 o_zero <= zero;
 end architecture RTL;
