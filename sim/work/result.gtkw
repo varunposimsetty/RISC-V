@@ -1,20 +1,20 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Thu Jan 23 08:55:40 2025
+[*] Thu Jan 23 11:15:14 2025
 [*]
 [dumpfile] "C:\Users\Posimsetty\Desktop\RISC-V\sim\work\result.ghw"
-[dumpfile_mtime] "Thu Jan 23 08:48:34 2025"
-[dumpfile_size] 11511546
+[dumpfile_mtime] "Thu Jan 23 11:13:17 2025"
+[dumpfile_size] 11523646
 [savefile] "C:\Users\Posimsetty\Desktop\RISC-V\sim\work\result.gtkw"
 [timestart] 0
 [size] 2560 1369
 [pos] 2551 -9
-*-25.673723 394400000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-26.904852 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.tb.
+[treeopen] top.tb.dut_alu.
 [treeopen] top.tb.dut_cu.
 [treeopen] top.tb.dut_im.
-[treeopen] top.tb.dut_rf.
 [sst_width] 278
 [signals_width] 286
 [sst_expanded] 1
@@ -61,5 +61,14 @@ top.tb.dut_rf.i_reg_write
 #{top.tb.dut_rf.i_write_data[31:0]} top.tb.dut_rf.i_write_data[31] top.tb.dut_rf.i_write_data[30] top.tb.dut_rf.i_write_data[29] top.tb.dut_rf.i_write_data[28] top.tb.dut_rf.i_write_data[27] top.tb.dut_rf.i_write_data[26] top.tb.dut_rf.i_write_data[25] top.tb.dut_rf.i_write_data[24] top.tb.dut_rf.i_write_data[23] top.tb.dut_rf.i_write_data[22] top.tb.dut_rf.i_write_data[21] top.tb.dut_rf.i_write_data[20] top.tb.dut_rf.i_write_data[19] top.tb.dut_rf.i_write_data[18] top.tb.dut_rf.i_write_data[17] top.tb.dut_rf.i_write_data[16] top.tb.dut_rf.i_write_data[15] top.tb.dut_rf.i_write_data[14] top.tb.dut_rf.i_write_data[13] top.tb.dut_rf.i_write_data[12] top.tb.dut_rf.i_write_data[11] top.tb.dut_rf.i_write_data[10] top.tb.dut_rf.i_write_data[9] top.tb.dut_rf.i_write_data[8] top.tb.dut_rf.i_write_data[7] top.tb.dut_rf.i_write_data[6] top.tb.dut_rf.i_write_data[5] top.tb.dut_rf.i_write_data[4] top.tb.dut_rf.i_write_data[3] top.tb.dut_rf.i_write_data[2] top.tb.dut_rf.i_write_data[1] top.tb.dut_rf.i_write_data[0]
 #{top.tb.dut_rf.o_read_data1[31:0]} top.tb.dut_rf.o_read_data1[31] top.tb.dut_rf.o_read_data1[30] top.tb.dut_rf.o_read_data1[29] top.tb.dut_rf.o_read_data1[28] top.tb.dut_rf.o_read_data1[27] top.tb.dut_rf.o_read_data1[26] top.tb.dut_rf.o_read_data1[25] top.tb.dut_rf.o_read_data1[24] top.tb.dut_rf.o_read_data1[23] top.tb.dut_rf.o_read_data1[22] top.tb.dut_rf.o_read_data1[21] top.tb.dut_rf.o_read_data1[20] top.tb.dut_rf.o_read_data1[19] top.tb.dut_rf.o_read_data1[18] top.tb.dut_rf.o_read_data1[17] top.tb.dut_rf.o_read_data1[16] top.tb.dut_rf.o_read_data1[15] top.tb.dut_rf.o_read_data1[14] top.tb.dut_rf.o_read_data1[13] top.tb.dut_rf.o_read_data1[12] top.tb.dut_rf.o_read_data1[11] top.tb.dut_rf.o_read_data1[10] top.tb.dut_rf.o_read_data1[9] top.tb.dut_rf.o_read_data1[8] top.tb.dut_rf.o_read_data1[7] top.tb.dut_rf.o_read_data1[6] top.tb.dut_rf.o_read_data1[5] top.tb.dut_rf.o_read_data1[4] top.tb.dut_rf.o_read_data1[3] top.tb.dut_rf.o_read_data1[2] top.tb.dut_rf.o_read_data1[1] top.tb.dut_rf.o_read_data1[0]
 #{top.tb.dut_rf.o_read_data2[31:0]} top.tb.dut_rf.o_read_data2[31] top.tb.dut_rf.o_read_data2[30] top.tb.dut_rf.o_read_data2[29] top.tb.dut_rf.o_read_data2[28] top.tb.dut_rf.o_read_data2[27] top.tb.dut_rf.o_read_data2[26] top.tb.dut_rf.o_read_data2[25] top.tb.dut_rf.o_read_data2[24] top.tb.dut_rf.o_read_data2[23] top.tb.dut_rf.o_read_data2[22] top.tb.dut_rf.o_read_data2[21] top.tb.dut_rf.o_read_data2[20] top.tb.dut_rf.o_read_data2[19] top.tb.dut_rf.o_read_data2[18] top.tb.dut_rf.o_read_data2[17] top.tb.dut_rf.o_read_data2[16] top.tb.dut_rf.o_read_data2[15] top.tb.dut_rf.o_read_data2[14] top.tb.dut_rf.o_read_data2[13] top.tb.dut_rf.o_read_data2[12] top.tb.dut_rf.o_read_data2[11] top.tb.dut_rf.o_read_data2[10] top.tb.dut_rf.o_read_data2[9] top.tb.dut_rf.o_read_data2[8] top.tb.dut_rf.o_read_data2[7] top.tb.dut_rf.o_read_data2[6] top.tb.dut_rf.o_read_data2[5] top.tb.dut_rf.o_read_data2[4] top.tb.dut_rf.o_read_data2[3] top.tb.dut_rf.o_read_data2[2] top.tb.dut_rf.o_read_data2[1] top.tb.dut_rf.o_read_data2[0]
+@200
+-ALU
+@22
+#{top.tb.dut_alu.i_a[31:0]} top.tb.dut_alu.i_a[31] top.tb.dut_alu.i_a[30] top.tb.dut_alu.i_a[29] top.tb.dut_alu.i_a[28] top.tb.dut_alu.i_a[27] top.tb.dut_alu.i_a[26] top.tb.dut_alu.i_a[25] top.tb.dut_alu.i_a[24] top.tb.dut_alu.i_a[23] top.tb.dut_alu.i_a[22] top.tb.dut_alu.i_a[21] top.tb.dut_alu.i_a[20] top.tb.dut_alu.i_a[19] top.tb.dut_alu.i_a[18] top.tb.dut_alu.i_a[17] top.tb.dut_alu.i_a[16] top.tb.dut_alu.i_a[15] top.tb.dut_alu.i_a[14] top.tb.dut_alu.i_a[13] top.tb.dut_alu.i_a[12] top.tb.dut_alu.i_a[11] top.tb.dut_alu.i_a[10] top.tb.dut_alu.i_a[9] top.tb.dut_alu.i_a[8] top.tb.dut_alu.i_a[7] top.tb.dut_alu.i_a[6] top.tb.dut_alu.i_a[5] top.tb.dut_alu.i_a[4] top.tb.dut_alu.i_a[3] top.tb.dut_alu.i_a[2] top.tb.dut_alu.i_a[1] top.tb.dut_alu.i_a[0]
+#{top.tb.dut_alu.i_b[31:0]} top.tb.dut_alu.i_b[31] top.tb.dut_alu.i_b[30] top.tb.dut_alu.i_b[29] top.tb.dut_alu.i_b[28] top.tb.dut_alu.i_b[27] top.tb.dut_alu.i_b[26] top.tb.dut_alu.i_b[25] top.tb.dut_alu.i_b[24] top.tb.dut_alu.i_b[23] top.tb.dut_alu.i_b[22] top.tb.dut_alu.i_b[21] top.tb.dut_alu.i_b[20] top.tb.dut_alu.i_b[19] top.tb.dut_alu.i_b[18] top.tb.dut_alu.i_b[17] top.tb.dut_alu.i_b[16] top.tb.dut_alu.i_b[15] top.tb.dut_alu.i_b[14] top.tb.dut_alu.i_b[13] top.tb.dut_alu.i_b[12] top.tb.dut_alu.i_b[11] top.tb.dut_alu.i_b[10] top.tb.dut_alu.i_b[9] top.tb.dut_alu.i_b[8] top.tb.dut_alu.i_b[7] top.tb.dut_alu.i_b[6] top.tb.dut_alu.i_b[5] top.tb.dut_alu.i_b[4] top.tb.dut_alu.i_b[3] top.tb.dut_alu.i_b[2] top.tb.dut_alu.i_b[1] top.tb.dut_alu.i_b[0]
+#{top.tb.dut_alu.i_alu_op[3:0]} top.tb.dut_alu.i_alu_op[3] top.tb.dut_alu.i_alu_op[2] top.tb.dut_alu.i_alu_op[1] top.tb.dut_alu.i_alu_op[0]
+#{top.tb.dut_alu.o_result[31:0]} top.tb.dut_alu.o_result[31] top.tb.dut_alu.o_result[30] top.tb.dut_alu.o_result[29] top.tb.dut_alu.o_result[28] top.tb.dut_alu.o_result[27] top.tb.dut_alu.o_result[26] top.tb.dut_alu.o_result[25] top.tb.dut_alu.o_result[24] top.tb.dut_alu.o_result[23] top.tb.dut_alu.o_result[22] top.tb.dut_alu.o_result[21] top.tb.dut_alu.o_result[20] top.tb.dut_alu.o_result[19] top.tb.dut_alu.o_result[18] top.tb.dut_alu.o_result[17] top.tb.dut_alu.o_result[16] top.tb.dut_alu.o_result[15] top.tb.dut_alu.o_result[14] top.tb.dut_alu.o_result[13] top.tb.dut_alu.o_result[12] top.tb.dut_alu.o_result[11] top.tb.dut_alu.o_result[10] top.tb.dut_alu.o_result[9] top.tb.dut_alu.o_result[8] top.tb.dut_alu.o_result[7] top.tb.dut_alu.o_result[6] top.tb.dut_alu.o_result[5] top.tb.dut_alu.o_result[4] top.tb.dut_alu.o_result[3] top.tb.dut_alu.o_result[2] top.tb.dut_alu.o_result[1] top.tb.dut_alu.o_result[0]
+@28
+top.tb.dut_alu.o_zero
 [pattern_trace] 1
 [pattern_trace] 0
