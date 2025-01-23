@@ -11,8 +11,9 @@ mkdir -p $WORK_DIR
 ghdl -i --workdir=$WORK_DIR ../src/ProgramCounter.vhd
 ghdl -i --workdir=$WORK_DIR ../src/InstructionMemory.vhd
 ghdl -i --workdir=$WORK_DIR ../src/ControlUnit.vhd
+ghdl -i --workdir=$WORK_DIR ../src/RegisterFile.vhd
 
-ghdl -i --workdir=$WORK_DIR ./tb_CU.vhd
+ghdl -i --workdir=$WORK_DIR ./tb_RF.vhd
 
 # building simulation files
 ghdl -m --workdir=$WORK_DIR tb
