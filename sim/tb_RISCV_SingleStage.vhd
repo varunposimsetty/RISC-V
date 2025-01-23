@@ -107,7 +107,7 @@ architecture bhv of tb is
             pc_sel <= '1';
             wait for 20 ns;
             pc_sel <= '0';
-            wait for 2000 ns;
+            wait for 200 ns;
             rst <= '0';
             wait for 200 ns;
             rst <= '1';
@@ -117,13 +117,13 @@ architecture bhv of tb is
             pc_sel <= '1';
             wait for 20 ns;
             pc_sel <= '0';
-            wait for 800 ns;
+            wait for 4000 ns;
             pc_in <= x"00000000";
             wait for 20 ns;
             pc_sel <= '1';
             wait for 40 ns;
             pc_sel <= '0';
-            wait for 1000 ns;
+            wait for 2000 ns;
             wait;
     end process proc_tb;
 end architecture bhv;
