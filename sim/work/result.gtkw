@@ -1,10 +1,10 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Thu Jan 23 11:15:14 2025
+[*] Thu Jan 23 14:11:28 2025
 [*]
 [dumpfile] "C:\Users\Posimsetty\Desktop\RISC-V\sim\work\result.ghw"
-[dumpfile_mtime] "Thu Jan 23 11:13:17 2025"
-[dumpfile_size] 11523646
+[dumpfile_mtime] "Thu Jan 23 14:09:19 2025"
+[dumpfile_size] 26478
 [savefile] "C:\Users\Posimsetty\Desktop\RISC-V\sim\work\result.gtkw"
 [timestart] 0
 [size] 2560 1369
@@ -12,9 +12,8 @@
 *-26.904852 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] top.
 [treeopen] top.tb.
-[treeopen] top.tb.dut_alu.
-[treeopen] top.tb.dut_cu.
 [treeopen] top.tb.dut_im.
+[treeopen] top.tb.dut_mem.
 [sst_width] 278
 [signals_width] 286
 [sst_expanded] 1
@@ -70,5 +69,15 @@ top.tb.dut_rf.i_reg_write
 #{top.tb.dut_alu.o_result[31:0]} top.tb.dut_alu.o_result[31] top.tb.dut_alu.o_result[30] top.tb.dut_alu.o_result[29] top.tb.dut_alu.o_result[28] top.tb.dut_alu.o_result[27] top.tb.dut_alu.o_result[26] top.tb.dut_alu.o_result[25] top.tb.dut_alu.o_result[24] top.tb.dut_alu.o_result[23] top.tb.dut_alu.o_result[22] top.tb.dut_alu.o_result[21] top.tb.dut_alu.o_result[20] top.tb.dut_alu.o_result[19] top.tb.dut_alu.o_result[18] top.tb.dut_alu.o_result[17] top.tb.dut_alu.o_result[16] top.tb.dut_alu.o_result[15] top.tb.dut_alu.o_result[14] top.tb.dut_alu.o_result[13] top.tb.dut_alu.o_result[12] top.tb.dut_alu.o_result[11] top.tb.dut_alu.o_result[10] top.tb.dut_alu.o_result[9] top.tb.dut_alu.o_result[8] top.tb.dut_alu.o_result[7] top.tb.dut_alu.o_result[6] top.tb.dut_alu.o_result[5] top.tb.dut_alu.o_result[4] top.tb.dut_alu.o_result[3] top.tb.dut_alu.o_result[2] top.tb.dut_alu.o_result[1] top.tb.dut_alu.o_result[0]
 @28
 top.tb.dut_alu.o_zero
+@200
+-DATA MEMORY
+@28
+top.tb.dut_mem.i_clk_100mhz
+top.tb.dut_mem.i_mem_read
+top.tb.dut_mem.i_mem_write
+@22
+#{top.tb.dut_mem.i_address[31:0]} top.tb.dut_mem.i_address[31] top.tb.dut_mem.i_address[30] top.tb.dut_mem.i_address[29] top.tb.dut_mem.i_address[28] top.tb.dut_mem.i_address[27] top.tb.dut_mem.i_address[26] top.tb.dut_mem.i_address[25] top.tb.dut_mem.i_address[24] top.tb.dut_mem.i_address[23] top.tb.dut_mem.i_address[22] top.tb.dut_mem.i_address[21] top.tb.dut_mem.i_address[20] top.tb.dut_mem.i_address[19] top.tb.dut_mem.i_address[18] top.tb.dut_mem.i_address[17] top.tb.dut_mem.i_address[16] top.tb.dut_mem.i_address[15] top.tb.dut_mem.i_address[14] top.tb.dut_mem.i_address[13] top.tb.dut_mem.i_address[12] top.tb.dut_mem.i_address[11] top.tb.dut_mem.i_address[10] top.tb.dut_mem.i_address[9] top.tb.dut_mem.i_address[8] top.tb.dut_mem.i_address[7] top.tb.dut_mem.i_address[6] top.tb.dut_mem.i_address[5] top.tb.dut_mem.i_address[4] top.tb.dut_mem.i_address[3] top.tb.dut_mem.i_address[2] top.tb.dut_mem.i_address[1] top.tb.dut_mem.i_address[0]
+#{top.tb.dut_mem.i_write_data[31:0]} top.tb.dut_mem.i_write_data[31] top.tb.dut_mem.i_write_data[30] top.tb.dut_mem.i_write_data[29] top.tb.dut_mem.i_write_data[28] top.tb.dut_mem.i_write_data[27] top.tb.dut_mem.i_write_data[26] top.tb.dut_mem.i_write_data[25] top.tb.dut_mem.i_write_data[24] top.tb.dut_mem.i_write_data[23] top.tb.dut_mem.i_write_data[22] top.tb.dut_mem.i_write_data[21] top.tb.dut_mem.i_write_data[20] top.tb.dut_mem.i_write_data[19] top.tb.dut_mem.i_write_data[18] top.tb.dut_mem.i_write_data[17] top.tb.dut_mem.i_write_data[16] top.tb.dut_mem.i_write_data[15] top.tb.dut_mem.i_write_data[14] top.tb.dut_mem.i_write_data[13] top.tb.dut_mem.i_write_data[12] top.tb.dut_mem.i_write_data[11] top.tb.dut_mem.i_write_data[10] top.tb.dut_mem.i_write_data[9] top.tb.dut_mem.i_write_data[8] top.tb.dut_mem.i_write_data[7] top.tb.dut_mem.i_write_data[6] top.tb.dut_mem.i_write_data[5] top.tb.dut_mem.i_write_data[4] top.tb.dut_mem.i_write_data[3] top.tb.dut_mem.i_write_data[2] top.tb.dut_mem.i_write_data[1] top.tb.dut_mem.i_write_data[0]
+#{top.tb.dut_mem.o_read_data[31:0]} top.tb.dut_mem.o_read_data[31] top.tb.dut_mem.o_read_data[30] top.tb.dut_mem.o_read_data[29] top.tb.dut_mem.o_read_data[28] top.tb.dut_mem.o_read_data[27] top.tb.dut_mem.o_read_data[26] top.tb.dut_mem.o_read_data[25] top.tb.dut_mem.o_read_data[24] top.tb.dut_mem.o_read_data[23] top.tb.dut_mem.o_read_data[22] top.tb.dut_mem.o_read_data[21] top.tb.dut_mem.o_read_data[20] top.tb.dut_mem.o_read_data[19] top.tb.dut_mem.o_read_data[18] top.tb.dut_mem.o_read_data[17] top.tb.dut_mem.o_read_data[16] top.tb.dut_mem.o_read_data[15] top.tb.dut_mem.o_read_data[14] top.tb.dut_mem.o_read_data[13] top.tb.dut_mem.o_read_data[12] top.tb.dut_mem.o_read_data[11] top.tb.dut_mem.o_read_data[10] top.tb.dut_mem.o_read_data[9] top.tb.dut_mem.o_read_data[8] top.tb.dut_mem.o_read_data[7] top.tb.dut_mem.o_read_data[6] top.tb.dut_mem.o_read_data[5] top.tb.dut_mem.o_read_data[4] top.tb.dut_mem.o_read_data[3] top.tb.dut_mem.o_read_data[2] top.tb.dut_mem.o_read_data[1] top.tb.dut_mem.o_read_data[0]
 [pattern_trace] 1
 [pattern_trace] 0
