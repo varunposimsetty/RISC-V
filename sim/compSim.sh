@@ -12,8 +12,9 @@ ghdl -i --workdir=$WORK_DIR ../src/ProgramCounter.vhd
 ghdl -i --workdir=$WORK_DIR ../src/InstructionMemory.vhd
 ghdl -i --workdir=$WORK_DIR ../src/ControlUnit.vhd
 ghdl -i --workdir=$WORK_DIR ../src/RegisterFile.vhd
+ghdl -i --workdir=$WORK_DIR ../src/ALU.vhd
 
-ghdl -i --workdir=$WORK_DIR ./tb_RF.vhd
+ghdl -i --workdir=$WORK_DIR ./tb_ALU.vhd
 
 # building simulation files
 ghdl -m --workdir=$WORK_DIR tb
