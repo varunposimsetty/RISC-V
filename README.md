@@ -11,6 +11,3 @@ This project implements a single-cycle processor for the RV32I instruction set a
 
 ![RISC-V Single Cycle Implementation](image.png)
 
-## Pipeline Processor (Work in Progress)
-- Completed a single cycle RISC-V processor
-- Working on a Pipelined Processor.
