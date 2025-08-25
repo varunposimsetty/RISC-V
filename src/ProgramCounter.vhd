@@ -12,7 +12,7 @@ entity ProgramCounter is
         i_clk_100MHz  : in std_ulogic;
         i_nrst_async  : in std_ulogic;
         i_pc          : in std_ulogic_vector(PC_WIDTH-1 downto 0);
-        i_pc_sel        : in std_ulogic;
+        i_pc_sel      : in std_ulogic;
         o_pc          : out std_ulogic_vector(PC_WIDTH-1 downto 0)
 
     );
