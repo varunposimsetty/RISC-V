@@ -16,14 +16,15 @@ ghdl -i --workdir=$WORK_DIR ../src/ALU.vhd
 ghdl -i --workdir=$WORK_DIR ../src/DataMemory.vhd
 ghdl -i --workdir=$WORK_DIR ../src/Top.vhd
 
-ghdl -i --workdir=$WORK_DIR ./tb_top.vhd
+#ghdl -i --workdir=$WORK_DIR ./tb_top.vhd
+ghdl -i --workdir=$WORK_DIR ./tb_IM.vhd
 #ghdl -i --workdir=$WORK_DIR ./tb_RISCV_SingleStage.vhd
 
 # building simulation files
 ghdl -m --workdir=$WORK_DIR tb
 
 # running the simulation
-ghdl -r --workdir=$WORK_DIR tb --wave=$WORK_DIR/$WAVE_FILE --stop-time=5ms
+ghdl -r --workdir=$WORK_DIR tb --wave=$WORK_DIR/$WAVE_FILE --stop-time=1ms
 
 # open gtkwave with project with new waveform if project exists, if not then just open the waveform in new project
 if [ -f $WORK_DIR/$GTKPROJ_FILE ]; then
