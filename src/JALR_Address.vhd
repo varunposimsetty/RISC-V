@@ -19,6 +19,7 @@ architecture RTL of JALRAddress is
     signal immediate : std_ulogic_vector(PC_WIDTH-1 downto 0) := (others => '0');
     signal target : std_ulogic_vector(PC_WIDTH-1 downto 0) := (others => '0');
     begin 
-    offset <=  (PC_WIDTH-1 downto 20 => i_instruction(31)) &  i_instruction(19 downto 12) & i_instruction(20) & i_instruction(30 downto 21) & '0';
-    o_address <= std_ulogic_vector(signed(i_pc) + signed(offset));
+    immediate <= (PC_WIDTH-1 downto 12 => i_instruction(31)) & i_instruction(31 downto 20);
+    target <= std_ulogic_vector(signed(i_source_register) + signed(immediate));
+    o_address <= target(PC_WIDTH-1 downto 1) & '0';
 end architecture RTL;
