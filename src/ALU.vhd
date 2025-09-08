@@ -121,5 +121,5 @@ begin
         end case;
     end process proc_alu;
     o_result <= result;
-    o_zero   <= '1' when result = (others => '0') else '0';
+    o_zero   <= '1' when result = (DATA_WIDTH-1 downto 0 => '0') else '0';
 end architecture RTL;

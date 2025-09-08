@@ -17,7 +17,7 @@ entity ImmediateGenerator is
 end entity ImmediateGenerator;
 
 architecture RTL of ImmediateGenerator is 
-    function imm_gen(inst : std_ulogic_vector(PC_WIDTH-1 downto 0),alui : std_ulogic_vector(1 downto 0)) return std_ulogic_vector is 
+    function imm_gen(inst : std_ulogic_vector(PC_WIDTH-1 downto 0) ; alui : std_ulogic_vector(1 downto 0)) return std_ulogic_vector is 
         variable imm : std_ulogic_vector(PC_WIDTH-1 downto 0);
         begin 
             case(alui) is   

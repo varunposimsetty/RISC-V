@@ -8,10 +8,10 @@ entity Mux4x32 is
         PC_WIDTH : integer := 32
     );
     port (
-        i_a0  : in std_ulogic_vector(PC_WIDTH-1 downto 0);
-        i_a1  : in std_ulogic_vector(PC_WIDTH-1 downto 0);
-        i_a2  : in std_ulogic_vector(PC_WIDTH-1 downto 0);
-        i_a3  : in std_ulogic_vector(PC_WIDTH-1 downto 0);
+        i_a0  : in std_ulogic_vector(PC_WIDTH-1 downto 0); -- (PC+4)
+        i_a1  : in std_ulogic_vector(PC_WIDTH-1 downto 0); -- (Branch Target)
+        i_a2  : in std_ulogic_vector(PC_WIDTH-1 downto 0); -- JAL
+        i_a3  : in std_ulogic_vector(PC_WIDTH-1 downto 0); -- JALR
         i_s   : in std_ulogic_vector(1 downto 0);
         o_y   : out std_ulogic_vector(PC_WIDTH-1 downto 0)      
     );
