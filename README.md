@@ -53,4 +53,4 @@ This repo includes a one‑shot script that:
 ![RISC-V SingleCycle](Images/OuputWaveform.png)
 ## Hardware Utilization 
 - Synthesized the design on Xilinx Vivado, the design is not optimized for I/O.
-![Hardware Utilization](Images\HardwareUtilization.png)
+![Hardware Utilization](Images/HardwareUtilization.png)
